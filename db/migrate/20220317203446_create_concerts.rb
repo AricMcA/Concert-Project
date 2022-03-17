@@ -3,7 +3,7 @@ class CreateConcerts < ActiveRecord::Migration[7.0]
     create_table :concerts do |t|
       t.string :artist
       t.string :location
-      t.string :date.date
+      t.date :date
 
       t.timestamps
     end
